@@ -1,0 +1,15 @@
+input{
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: solid grey 1px;
+    padding: 10px;
+}
+.titulo{
+    background-color: black;
+    color: aliceblue;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

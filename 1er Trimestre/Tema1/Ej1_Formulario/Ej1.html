@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios de HTML5</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
 </head>
+
 <body>
-    <form action="guardar.php" method="get">
+    <form action="guardar.html" method="get" target="_self">
         <p><label for="nombre">Nombre: </label><input type="text" name="nombre" id="nombre" required autofocus
                 placeholder="Introduzca su nombre"></p>
-        <p><label for="mail">Email: </label><input type="email" name="mail" id="mail" required placeholder="Introduzca su correo electrónico"></p>
-        <p><label for="url">URL: </label><input type="url" name="url" id="url" placeholder="Escribe la URL de tu página web personal"></p>
+        <p><label for="mail">Email: </label><input type="email" name="mail" id="mail" required
+                placeholder="Introduzca su correo electrónico"></p>
+        <p><label for="url">URL: </label><input type="url" name="url" id="url"
+                placeholder="Escribe la URL de tu página web personal"></p>
         <p><label for="fecha">Fecha: </label><input type="date" name="fecha" id="fecha"></p>
         <p><label for="tiempo">Tiempo: </label><input type="time" name="tiempo" id="tiempo"></p>
         <p><label for="fandh">Fecha y hora: </label><input type="datetime-local" name="fandh" id="fandh"></p>
