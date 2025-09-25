@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    margin-bottom: 50px;
+}
+
+input{
+    margin-bottom: 10px;
+}
+table{
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+table thead tr th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: lightgray;
+    padding: 5px;
+}
+td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: lightcyan;
+    text-align: center;
+    padding: 15px;
+}
