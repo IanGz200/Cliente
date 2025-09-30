@@ -14,20 +14,22 @@ function generar_tabla(numero) {
 
             document.body.removeChild(document.getElementById("tabla"));
 
-            const body = document.body;
-            const tabla = document.createElement("table");
-            tabla.setAttribute("id", "tabla");
-
-            body.appendChild(generar_header(tabla, numero));
-
-        }else {
-
-            const body = document.body;
-            const tabla = document.createElement("table");
-            tabla.setAttribute("id", "tabla");
-
-            body.appendChild(generar_header(tabla, numero));
         }
+        if(document.getElementById('num') !== null){
+
+            document.body.removeChild(document.getElementById("num"));
+
+        }
+            const body = document.body;
+            const subtitulo= document.createElement("h2");
+            subtitulo.innerHTML="Tabla de multiplicar del "+numero
+            subtitulo.id = "num";
+            body.appendChild(subtitulo);
+            const tabla = document.createElement("table");
+            tabla.setAttribute("id", "tabla");
+
+            body.appendChild(generar_header(tabla, numero));
+
     }
 }
 
@@ -48,7 +50,7 @@ function generar_header(tabla,numero) {
     for (let i = 1; i <= 10; i++) {
 
         let th = document.createElement("th");
-        th.innerHTML = i;
+        th.innerHTML = String(i);
 
         tr.appendChild(th);
 
@@ -74,7 +76,7 @@ function generar_tbody(tabla,numero) {
     for (let i = 1; i <= 10; i++) {
 
         let td = document.createElement("td");
-        td.innerHTML = i*numero;
+        td.innerHTML = String(i*numero);
 
         tr.appendChild(td);
 
