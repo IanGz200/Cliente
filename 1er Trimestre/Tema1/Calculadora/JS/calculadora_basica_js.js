@@ -29,7 +29,7 @@ function add(num) {
 /**
  * Restablece los valores por defecto
  */
-function resetear() {
+function darC() {
 
     document.getElementById("valor_numero").value = "0";
     operador = "";
@@ -39,7 +39,7 @@ function resetear() {
 /**
  * Dependiendo del operador realiza la operacion correspondiente de los valores 1 y 2
  */
-function resultado() {
+function esIgual() {
 
     valor2 = document.getElementById("valor_numero").value.replace(valor1+operador, "");
 
