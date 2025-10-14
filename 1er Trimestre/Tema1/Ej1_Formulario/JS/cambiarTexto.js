@@ -1,5 +1,5 @@
 function cambiar_texto(){
-    if (document.getElementById("prueba").innerHTML == "Otro texto") {
+    if (document.getElementById("prueba").innerHTML === "Otro texto") {
 
         document.getElementById("prueba").innerHTML = "Texto original";
         
@@ -10,7 +10,7 @@ function cambiar_texto(){
 
 function cambiar_tamaño(){
 
-    if (document.getElementById("prueba").style.fontSize == "16px") {
+    if (document.getElementById("prueba").style.fontSize === "16px") {
         
         document.getElementById("prueba").style.fontSize = "100px";
 
@@ -20,7 +20,7 @@ function cambiar_tamaño(){
 
 function cambiar_color() {
 
-    if (document.getElementById("prueba").style.color == "black") {
+    if (document.getElementById("prueba").style.color === "black") {
         
         document.getElementById("prueba").style.color = "red";
 
