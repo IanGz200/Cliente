@@ -1,15 +1,9 @@
-function Dog(name) {
-    this.name = name;
+const globalArray = [5, 6, 3, 2, 9];
+
+function nonMutatingSort(arr) {
+    // Only change code below this line
+
+    // Only change code above this line
 }
 
-// Only change code below this line
-Dog.prototype = {
-    constructor: Dog,
-    numLegs: 4,
-    eat: function() {
-        console.log("nom nom nom");
-    },
-    describe: function() {
-        console.log("My name is " + this.name);
-    }
-};
+nonMutatingSort(globalArray);
