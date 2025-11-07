@@ -1,9 +1,12 @@
-const globalArray = [5, 6, 3, 2, 9];
-
-function nonMutatingSort(arr) {
+function add(x) {
     // Only change code below this line
+    return function (y){
+        return function(z){
+            return x + y + z;
+        }
+    }
 
     // Only change code above this line
 }
 
-nonMutatingSort(globalArray);
+console.log(add(10)(20)(30));
