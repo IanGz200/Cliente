@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)file:///home/daw2al17/Descargas/bom.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demostración Completa del BOM</title>
+    <style>
+        body { font-family: sans-serif; margin: 30px; }
+        h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; }
+        button { margin: 5px; padding: 10px 15px; cursor: pointer; background-color: #007bff; color: white; border: none; border-radius: 4px; }
+        button:hover { background-color: #0056b3; }
+        .seccion { margin-bottom: 30px; padding: 15px; border: 1px solid #eee; border-radius: 6px; }
+    </style>
+</head>
+<body>
+
+    <h1>🚀 Browser Object Model (BOM) - Ejemplos</h1>
+    <p>Abre la consola de desarrollador (F12) para ver los mensajes de `console.log`.</p>
+
+    <div class="seccion">
+        <h2>1. Objeto 📍 `location` (URL)</h2>
+        <p>URL actual: <strong id="url-actual">Cargando...</strong></p>
+        <button onclick="mostrarURL()">Mostrar URL Completa</button>
+        <button onclick="redirigirBOM()">Redirigir a Google</button>
+        <button onclick="recargarPagina()">Recargar Página</button>
+    </div>
+    
+    <div class="seccion">
+        <h2>2. Ventanas de Diálogo (BOM)</h2>
+        <button onclick="usarAlert()">Mostrar Alert</button>
+        <button onclick="usarConfirm()">Mostrar Confirm</button>
+        <button onclick="usarPrompt()">Mostrar Prompt</button>
+        <p id="dialogo-resultado"></p>
+    </div>
+
+    <div class="seccion">
+        <h2>3. Objeto 📜 `history`</h2>
+        <p>Necesitas haber navegado a otra página (o usar el botón "Redirigir") para que estos botones funcionen.</p>
+        <button onclick="volverAtras()">Volver Atrás (history.back())</button>
+        <button onclick="avanzar()">Avanzar (history.forward())</button>
+    </div>
+    
+    <div class="seccion">
+        <h2>4. Objeto `window` (Abrir/Cerrar Pestaña)</h2>
+        <p><strong>ATENCIÓN:</strong> El botón Cerrar solo funcionará si el navegador lo permite (según sus políticas de seguridad).</p>
+        <button onclick="abrirNuevaVentana()">Abrir Pestaña BOM</button>
+        <button onclick="cerrarVentanaAbierta()">Cerrar Pestaña BOM</button>
+        <p id="estado"></p>
+    </div>
+
+<!-- implementa el codigo aqui-->
+<script>
+
+        // =================================================================
+        // 1. Objeto location (URL)
+        // =================================================================
+        function mostrarURL() {
+
+            document.getElementById('url-actual').innerText = window.location.href;
+
+        }
+
+
+        function redirigirBOM() {
+
+
+        }
+
+
+        function recargarPagina() {
+
+        }
+        // =================================================================
+        // 2. Ventanas de Diálogo
+        // =================================================================
+        function usarAlert() {
+        }
+
+        function usarConfirm() {
+        }
+
+        function usarPrompt() {
+        }
+
+
+
+        // =================================================================
+        // 3. Objeto history
+        // =================================================================
+        function volverAtras() {
+        }
+
+        function avanzar() {
+        }
+
+
+        // =================================================================
+        // 4. Objeto window (Abrir/Cerrar)
+        // =================================================================
+        function abrirNuevaVentana() {
+
+        }
+        
+        function cerrarVentanaAbierta() {
+
+        }
+
+</script>
+
+
+</body></html>
