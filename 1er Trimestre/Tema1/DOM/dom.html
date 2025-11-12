@@ -46,6 +46,7 @@
         // =================================================================
         function cambiarContenido() {
             // Tarea: Seleccionar el elemento por su ID y cambiar su propiedad textContent
+            document.getElementById('parrafo-contenido').innerText = 'Texto cambiado';
         }
 
         function cambiarAtributo() {
@@ -53,6 +54,8 @@
             // 1. Seleccionar la imagen por su ID.
             // 2. Cambiar el atributo 'src' a 'https://via.placeholder.com/150/e74c3c/FFFFFF?Text=Cambiado'
             // 3. Cambiar el atributo 'alt' a 'Nueva imagen DOM'
+            document.getElementById('imagen-dom').src = 'https://via.placeholder.com/150/e74c3c/FFFFFF?Text=Cambiado';
+            document.getElementById('imagen-dom').alt = 'Nueva imagen DOM';
         }
 
         // =================================================================
@@ -60,6 +63,7 @@
         // =================================================================
         function cambiarFondo() {
             // Tarea: Seleccionar la caja por su ID y cambiar el color de fondo (propiedad style) a 'purple'
+            document.getElementById('caja-estilo').style.backgroundColor = 'purple';
         }
 
         function aplicarClase() {
