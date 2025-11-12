@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demostración del DOM</title>
+    <style>
+        body { font-family: sans-serif; margin: 30px; }
+        h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; }
+        button { margin: 5px; padding: 10px 15px; cursor: pointer; background-color: #1abc9c; color: white; border: none; border-radius: 4px; }
+        button:hover { background-color: #16a085; }
+        .seccion { margin-bottom: 30px; padding: 15px; border: 1px solid #eee; border-radius: 6px; }
+        .resaltado { color: #e74c3c; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h1>🧱 Document Object Model (DOM) - Ejemplos</h1>
+    
+    <div class="seccion">
+        <h2>1. Contenido y Atributos</h2>
+        <p id="parrafo-contenido" class="resaltado">Este texto será modificado con JavaScript.</p>
+        <img id="imagen-dom" src="https://via.placeholder.com/150/999999/FFFFFF?Text=Original" alt="Imagen simple" width="150">
+        <br>
+        <button onclick="cambiarContenido()">Cambiar Contenido del Párrafo</button>
+        <button onclick="cambiarAtributo()">Cambiar Imagen y Título</button>
+    </div>
+    
+    <div class="seccion">
+        <h2>2. Estilos y Clases</h2>
+        <div id="caja-estilo" style="width: 200px; height: 100px; background-color: #3498db; border: 1px solid black; margin-bottom: 10px;"></div>
+        <button onclick="cambiarFondo()">Cambiar Fondo (Style)</button>
+        <button onclick="aplicarClase()">Alternar Clase Resaltada</button>
+    </div>
+
+    <div class="seccion">
+        <h2>3. Eventos y Creación de Nodos</h2>
+        <button id="boton-evento">Botón con Event Listener</button>
+        <div id="contenedor-nodos" style="margin-top: 15px;"></div>
+        <button onclick="crearNuevoElemento()">Crear Elemento (DOM)</button>
+    </div>
+
+    <script>
+        // =================================================================
+        // 1. Contenido y Atributos
+        // =================================================================
+        function cambiarContenido() {
+            // Tarea: Seleccionar el elemento por su ID y cambiar su propiedad textContent
+        }
+
+        function cambiarAtributo() {
+            // Tarea: 
+            // 1. Seleccionar la imagen por su ID.
+            // 2. Cambiar el atributo 'src' a 'https://via.placeholder.com/150/e74c3c/FFFFFF?Text=Cambiado'
+            // 3. Cambiar el atributo 'alt' a 'Nueva imagen DOM'
+        }
+
+        // =================================================================
+        // 2. Estilos y Clases
+        // =================================================================
+        function cambiarFondo() {
+            // Tarea: Seleccionar la caja por su ID y cambiar el color de fondo (propiedad style) a 'purple'
+        }
+
+        function aplicarClase() {
+            // Tarea: 
+            // 1. Seleccionar el párrafo 'parrafo-contenido' (del punto 1).
+            // 2. Usar classList.toggle para alternar la clase 'resaltado'.
+        }
+
+
+        // =================================================================
+        // 3. Manejo de Eventos y Creación de Nodos
+        // =================================================================
+        // Tarea: 
+        // 1. Seleccionar el 'boton-evento'
+        // 2. Añadirle un 'event listener' para el evento 'click'
+        // 3. La función de escucha debe hacer un console.log('Evento DOM capturado')
+        const botonEvento = document.getElementById("boton-evento");
+        // IMPLEMENTAR EVENT LISTENER AQUÍ
+
+
+        function crearNuevoElemento() {
+            // Tarea: 
+            // 1. Crear un nuevo elemento <li> (document.createElement)
+            // 2. Asignarle el textContent: 'Elemento Creado en el DOM'
+            // 3. Seleccionar el 'contenedor-nodos' por su ID
+            // 4. Añadir el nuevo elemento <li> como hijo del contenedor (appendChild)
+        }
+        
+    </script>
+</body>
+</html>
