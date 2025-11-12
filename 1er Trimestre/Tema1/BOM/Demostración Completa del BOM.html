@@ -63,23 +63,35 @@
 
         function redirigirBOM() {
 
+            window.location.href = 'https://google.com';
 
         }
 
 
         function recargarPagina() {
 
+            window.location.reload();
+
         }
         // =================================================================
         // 2. Ventanas de Diálogo
         // =================================================================
         function usarAlert() {
+
+            alert("Alerta por pantalla")
+
         }
 
         function usarConfirm() {
+
+            confirm("Confirma por pantalla")
+
         }
 
         function usarPrompt() {
+
+            prompt("Nombre:","Rellena este campo")
+
         }
 
 
@@ -88,9 +100,15 @@
         // 3. Objeto history
         // =================================================================
         function volverAtras() {
+
+            window.history.back();
+
         }
 
         function avanzar() {
+
+            window.history.forward();
+
         }
 
 
@@ -99,9 +117,13 @@
         // =================================================================
         function abrirNuevaVentana() {
 
+            window.open('https://www.google.com');
+
         }
         
         function cerrarVentanaAbierta() {
+
+            window.close()
 
         }
 
