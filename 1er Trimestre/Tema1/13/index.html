@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con validación</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            background-color: rgb(230, 230, 230);
+        }
+        fieldset{
+            background-color: rgb(250, 250, 250);
+            border: 1px solid black ;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 10px 30px;
+        }
+        legend{
+            border: 1px solid black;
+            padding: 5px;
+            background-color: rgb(250, 250, 250);
+            border-radius: 5px;
+        }
+        form{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: right;
+        }
+        label{
+            width: 30%;
+            text-align: right;
+            padding:10px 15px 10px 0px;
+        }
+        input, select{
+            background-color: rgb(230, 230, 230);
+            border: 1px solid gray;
+            border-radius: 5px;
+            width: 70%;
+            padding: 5px 10px;
+            margin: 10px 0;
+        }
+        .info{
+            width: 71%;
+        }
+        .reset, .submit{
+            width: 10%;
+            padding: 10px;
+            border: none;
+        }
+        .reset{
+            margin-right: 10px;
+            background-color: red;
+            color: white;
+        }
+        .submit{
+            background-color: seagreen;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>DATOS DEL USUARIO</legend>
+        <form action="" method="get">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+            <label for="primer_apellido">Primer apellido:</label>
+            <input type="text" name="primer_apellido" id="primer_apellido">
+            <label for="segundo_apellido">Segundo apellido:</label>
+            <input type="text" name="segundo_apellido" id="segundo_apellido">
+            <label for="fecha_nac">Fecha de nacimiento:</label>
+            <input type="date" name="fecha_nac" id="fecha_nac">
+            <label for="docu">Tipo de documento:</label>
+            <select name="docu" id="docu">
+                <option value="0">-</option>
+                <option value="dni">DNI</option>
+                <option value="cvc">NIE</option>
+            </select>
+            <label for="n_docu">Nº documento:</label>
+            <input type="text" name="n_docu" id="n_docu">
+            <p class="info">Este identificador se utilizará como usuario de acceso a la Sede electrónica</p>
+            <label for="n_soporte">Número de Soporte/IDESP/IXESP:</label>
+            <input type="number" name="n_soporte" id="n_soporte">
+            <label for="contra">Contraseña:</label>
+            <input type="password" name="contra" id="contra">
+            <label for="contra_rep">Repita la contraseña:</label>
+            <input type="password" name="contra_rep" id="contra_rep">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="email" id="email">
+            <label for="email_rep">Repita correo electrónico:</label>
+            <input type="email" name="email_rep" id="email_rep">
+            <label for="tlf">Teléfono móvil:</label>
+            <input type="tel" name="tlf" id="tlf">
+            <input class="reset" type="reset" value="Reset">
+            <input class="submit" type="submit" value="Enviar">
+        </form>
+    </fieldset>
+</body>
+</html>
