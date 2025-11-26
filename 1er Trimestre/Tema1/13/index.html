@@ -82,11 +82,10 @@
             <select name="docu" id="docu">
                 <option value="0">-</option>
                 <option value="dni">DNI</option>
-                <option value="cvc">NIE</option>
+                <option value="nie">NIE</option>
             </select>
             <label for="n_docu">Nº documento:</label>
             <input type="text" name="n_docu" id="n_docu">
-            <p class="info">Este identificador se utilizará como usuario de acceso a la Sede electrónica</p>
             <label for="n_soporte">Número de Soporte/IDESP/IXESP:</label>
             <input type="number" name="n_soporte" id="n_soporte">
             <label for="contra">Contraseña:</label>
@@ -103,5 +102,25 @@
             <input class="submit" type="submit" value="Enviar">
         </form>
     </fieldset>
+    <script>
+        let nombre = document.getElementById('nombre').value;
+        let primerApellido = document.getElementById('primer_apellido').value;
+        let segundoApellido = document.getElementById('segundo_apellido').value;
+        let fechaNacimiento = document.getElementById('fecha_nac').value;
+        let documento = document.getElementById('docu').value;
+        let nDocumento = document.getElementById('n_docu').value;
+        let nSoporte = document.getElementById('n_soporte').value;
+        let contrasena = document.getElementById('contra').value;
+        let contrasenaRep = document.getElementById('contra_rep').value;
+        let email = document.getElementById('email').value;
+        let emailRep = document.getElementById('email_rep').value;
+        let telefono = document.getElementById('tlf').value;
+
+        let errores = [];
+        let regExp = '/^[A-Z]\\w{5,12}$/'
+        if (nombre === ''){
+            errores['nombre'] = ('El nombre no puede ser una cadena vacía')
+        }
+    </script>
 </body>
 </html>
