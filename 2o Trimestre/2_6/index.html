@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>2-6</title>
+        <link rel="stylesheet" href="stilos.css" />
+    </head>
+    <body>
+        <h1>CRUD ASINCRONO</h1>
+        <button type="button" id="btn-insertar">Insertar Usuario</button>
+        <h2>Lista de Usuarios</h2>
+        <button type="button" id="btn-cargar">Cargar usuarios</button>
+        <table id="tabla-usuarios" border="1">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre completo</th>
+                    <th>Correo Electrónico</th>
+                    <th>Nombre de Usuario</th>
+                    <th>Teléfono</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="usuarios-tbody"></tbody>
+        </table>
+        <div id="modal-usuario" class="modal">
+            <div class="modal-content">
+                <span class="cerrar">&times;</span>
+                <form id="postUsuario">
+                    <input type="hidden" name="userId" id="userId">
+                    <div>
+                        <label for="username">Nombre de Usuario:</label>
+                        <input type="text" name="username" id="username" />
+                    </div>
+                    <div>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" name="nombre" id="nombre" />
+                    </div>
+                    <div>
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" name="correo" id="correo" />
+                    </div>
+                    <div>
+                        <label for="telef">Teléfono:</label>
+                        <input type="tel" name="telef" id="telef" />
+                    </div>
+                    <button type="button" id="btn-guardar">Guardar</button>
+                </form>
+            </div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>

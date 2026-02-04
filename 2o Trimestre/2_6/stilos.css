@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#tabla-usuarios {
+    border-collapse: collapse;
+    margin: 5%;
+    display: none;
+}
+#tabla-usuarios th,
+#tabla-usuarios td {
+    padding: 15px;
+}
+#tabla-usuarios button {
+    margin-right: 5px;
+}
+
+button {
+    padding: 5px;
+}
+
+h1, h2, body > button {
+    margin-left: 5%;
+}
+
+.modal {
+    display: none;
+    position: fixed; /* Posición fija */
+    z-index: 1; /* Se situará por encima de otros elementos de la página*/
+    padding-top: 200px; /* El contenido estará situado a 200px de la parte superior */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Algura completa */
+    overflow: auto; /* Se activará el scroll si es necesario */
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con opacidad del 50% */
+}
+
+.modal-content {
+    position: relative; /* Relativo con respecto al contenedor -modal- */
+    background-color: white;
+    margin: auto; /* Centrada */
+    padding: 20px;
+    width: 60%;
+    animation-name: animarsuperior;
+    animation-duration: 0.5s;
+}
+
+@keyframes animarsuperior {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.cerrar {
+    color: black;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+.cerrar:hover,
+.cerrar:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form > div {
+    margin: 5%;
+}
