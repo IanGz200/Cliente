@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Taller PokéAPI</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body { background-color: #f4f7f6; }
+            .pokemon-card { border-radius: 15px; transition: 0.3s; border: none; }
+            .pokemon-card:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark mb-4 shadow">
+            <div class="container text-center"><span class="navbar-brand">MI POKÉDEX ASÍNCRONA</span></div>
+        </nav>
+
+        <div class="container">
+            <div class="row mb-4 justify-content-center">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="text" id="pokemonInput" class="form-control" placeholder="Nombre del Pokémon...">
+                        <button class="btn btn-danger" id="btnBuscar">Buscar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center gap-2 mb-4">
+                <button class="btn btn-outline-danger" id="btnFuego">Fuego 🔥</button>
+                <button class="btn btn-outline-primary" id="btnAgua">Agua 💧</button>
+                <button class="btn btn-outline-success" id="btnPlanta">Planta 🌿</button>
+            </div>
+
+            <div id="pokemonContainer" class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4"></div>
+        </div>
+        <script src="Modelo.js"></script>
+        <script src="Vista.js"></script>
+        <script src="Controlador.js"></script>
+    </body>
+</html>
